@@ -31,7 +31,7 @@ function setCurrentNav() {
               <li data-menu="summary"><a href="./page/00-service-intro/00-summary.html">서비스 개요</a></li>
               <li data-menu="who"><a href="./page/00-service-intro/01-who.html">서비스 제공 대상</a></li>
               <li data-menu="caution"><a href="./page/00-service-intro/02-caution.html">유의사항</a></li>
-              <li data-menu="who"><a href="../00-service-intro/03-misa.html">선거 안내</a></li>
+              <li data-menu="who"><a href="./page/00-service-intro/03-misa.html">선거 안내</a></li>
             </ul>
           </li>
           <li class="sub2" data-menu="how-to">
