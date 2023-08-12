@@ -19,7 +19,7 @@ function setCurrentNav() {
     $("header").append(`
       <h1>
       <a href="./index.html"
-        ><img alt="투표24" src="./img/voting.png"
+        ><img alt="투표24" src="./img/logo-color_only.png"
       /></a>
       </h1>
       <a href="#" class="menu mobile"><span>내비게이션 열기/닫기</span></a>
@@ -61,7 +61,7 @@ function setCurrentNav() {
     $("header").append(`
       <h1>
       <a href="../../index.html"
-        ><img alt="투표24" src="../../img/voting.png"
+        ><img alt="투표24" src="../../img/logo-color_only.png"
         /></a>
       </h1>
       <a href="#" class="menu mobile"><span>내비게이션 열기/닫기</span></a>
