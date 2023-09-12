@@ -15,6 +15,7 @@ function preventDefaultAnchor() {
 function setCurrentNav() {
   var bodyClass = $("body").attr("class");
   var classArray = bodyClass.split(" ");
+  console.log(classArray[0])
   if (classArray[0] === "main") {
     $("header").append(`
       <h1>
@@ -31,16 +32,22 @@ function setCurrentNav() {
               <li data-menu="summary"><a href="./page/00-service-intro/00-summary.html">서비스 개요</a></li>
               <li data-menu="who"><a href="./page/00-service-intro/01-who.html">서비스 제공 대상</a></li>
               <li data-menu="caution"><a href="./page/00-service-intro/02-caution.html">유의사항</a></li>
-              <li data-menu="who"><a href="./page/00-service-intro/03-misa.html">선거 안내</a></li>
+              <li data-menu="misa"><a href="./page/00-service-intro/03-misa.html">선거 안내</a></li>
             </ul>
           </li>
-          <li class="sub2" data-menu="how-to">
+          <li class="sub2" data-menu="product">
+            <a href="./page/00-01-product/00-product.html">솔루션 소개</a>
+          <ul>
+            <li data-menu="product"><a href="./page/00-01-product/00-trading.html">자동매매 솔루션</a></li>
+          </ul>
+        </li>
+          <li class="sub3" data-menu="how-to">
             <a href="./page/01-how-to/00-how-to.html">이용방법</a>
             <ul>
               <li data-menu="how-to"><a href="./page/01-how-to/00-how-to.html">이용방법</a></li>
             </ul>
           </li>
-          <li class="sub3" data-menu="fee">
+          <li class="sub4" data-menu="fee">
             <a href="./page/02-fee/00-fee.html">이용수수료</a>
             <ul>
               <li data-menu="fee"><a href="./page/02-fee/00-fee.html">이용수수료</a></li>
@@ -76,13 +83,18 @@ function setCurrentNav() {
               <li data-menu="who"><a href="../00-service-intro/03-misa.html">선거 안내</a></li>
             </ul>
           </li>
-          <li class="sub2" data-menu="how-to">
+          <li class="sub2" data-menu="product">
+            <a href="../00-01-product/00-product.html">솔루션 소개</a>
+          <ul>
+            <li data-menu="product"><a href="../00-01-product/00-product.html">서비스 개요</a></li>
+          </ul>
+          <li class="sub3" data-menu="how-to">
             <a href="../01-how-to/00-how-to.html">이용방법</a>
             <ul>
               <li data-menu="how-to"><a href="../01-how-to/00-how-to.html">이용방법</a></li>
             </ul>
           </li>
-          <li class="sub3" data-menu="fee">
+          <li class="sub4" data-menu="fee">
             <a href="../02-fee/00-fee.html">이용수수료</a>
             <ul>
               <li data-menu="fee"><a href="../02-fee/00-fee.html">이용수수료</a></li>
@@ -182,7 +194,7 @@ function setFooter() {
   <p class="copyright">
   제이블소프트 | 경기도 하남시 미사강변동로 125(망월동)
   | 대표 이민옥 |
-  사업자등록번호 869-02-02207 | 대표번호 010-7217-8550 | 메일
+  사업자등록번호 869-02-02207 | 대표번호 010-7317-8550 | 메일
   jableit@naver.com <br />Copyright © 제이블소프트
   All Rights Reserved.
 </p>
