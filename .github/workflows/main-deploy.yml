@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: SSH Commands 123
+      - name: SSH Commands
         uses: appleboy/ssh-action@v0.1.6
         with:
           host: ${{ secrets.AWS_SSH_HOST }}
@@ -19,5 +19,5 @@ jobs:
           port: ${{ secrets.AWS_SSH_PORT }}
           script_stop: true
           script: |
-            cd project-baka-vt24
+            cd vt24html
             git pull
