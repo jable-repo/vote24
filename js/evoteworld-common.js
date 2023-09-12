@@ -15,12 +15,12 @@ function preventDefaultAnchor() {
 function setCurrentNav() {
   var bodyClass = $("body").attr("class");
   var classArray = bodyClass.split(" ");
-  console.log(classArray[0])
+  console.log(classArray[0]);
   if (classArray[0] === "main") {
     $("header").append(`
       <h1>
       <a href="./index.html"
-        ><img alt="투표24" src="./img/logo-color_only.png"
+        ><img alt="투표24" src="./img/logo-color_only.png" width=40
       /></a>
       </h1>
       <a href="#" class="menu mobile"><span>내비게이션 열기/닫기</span></a>
@@ -151,7 +151,9 @@ function navEvent() {
   $("#gnb > ul > li").each(function () {
     var numSub = $(this).find("> ul > li").length;
     if (numSub > 0) {
-      $(this).find("> a").append('<i class="fas fa-plus mobile"><span>열림</span></i>');
+      $(this)
+        .find("> a")
+        .append('<i class="fas fa-plus mobile"><span>열림</span></i>');
     }
   });
 
@@ -171,7 +173,11 @@ function navEvent() {
       $(this).find("i").attr({ class: "fas fa-minus mobile" });
 
       $(this).parent().siblings().find("> ul").css({ height: 0 });
-      $(this).parent().siblings().find("> a i").attr({ class: "fas fa-plus mobile" });
+      $(this)
+        .parent()
+        .siblings()
+        .find("> a i")
+        .attr({ class: "fas fa-plus mobile" });
     }
   });
 
