@@ -19,5 +19,5 @@ jobs:
           port: ${{ secrets.AWS_SSH_PORT }}
           script_stop: true
           script: |
-            cd vt24html
+            cd vote24
             git pull
