@@ -474,7 +474,7 @@ body.sub div.title-bg {
 body.sub div.title-bg > .title {
   height: 100%;
   padding-top: 30px;
-  background: url(../img/common/nav_01.svg) calc(100% - 20px) center no-repeat;
+  background: url(../img/common/vote.png) calc(100% - 90px) center no-repeat;
   background-size: contain;
   box-sizing: border-box;
 }
