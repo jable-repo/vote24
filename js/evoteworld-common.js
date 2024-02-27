@@ -36,9 +36,9 @@ function setCurrentNav() {
             </ul>
           </li>
           <li class="sub2" data-menu="product">
-            <a href="./page/00-01-product/00-product.html">솔루션 소개</a>
+            <a href="./page/05-port/05-port.html">포트폴리오</a>
           <ul>
-            <li data-menu="product"><a href="./page/00-01-product/00-trading.html">자동매매 솔루션</a></li>
+            <li data-menu="product"><a href="./page/05-port/05-port.html">포트폴리오</a></li>
           </ul>
         </li>
           <li class="sub3" data-menu="how-to">
@@ -84,9 +84,9 @@ function setCurrentNav() {
             </ul>
           </li>
           <li class="sub2" data-menu="product">
-            <a href="../00-01-product/00-product.html">솔루션 소개</a>
+            <a href="../05-port/05-port.html">포트폴리오</a>
           <ul>
-            <li data-menu="product"><a href="../00-01-product/00-product.html">서비스 개요</a></li>
+            <li data-menu="product"><a href="../05-port/05-port.html">포트폴리오</a></li>
           </ul>
           <li class="sub3" data-menu="how-to">
             <a href="../01-how-to/00-how-to.html">이용방법</a>
