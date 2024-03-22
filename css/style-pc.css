@@ -169,7 +169,7 @@ body.no-scroll {
 }
 #gnb > ul > li {
   float: left;
-  width: 120px;
+  width: 300px;
 }
 #gnb > ul > li + li {
   margin-left: 20px;

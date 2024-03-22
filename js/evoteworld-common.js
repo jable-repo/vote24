@@ -12,7 +12,7 @@ function preventDefaultAnchor() {
   });
 }
 
-function setCurrentNav() {
+function setCurrentNav_back() {
   var bodyClass = $("body").attr("class");
   var classArray = bodyClass.split(" ");
   console.log(classArray[0]);
@@ -107,6 +107,41 @@ function setCurrentNav() {
             </ul>
           </li>
         </ul>
+        <span class="bar"></span>
+      </nav>
+    `);
+  }
+}
+
+function setCurrentNav() {
+  var bodyClass = $("body").attr("class");
+  var classArray = bodyClass.split(" ");
+  console.log(classArray[0]);
+  if (classArray[0] === "main") {
+    $("header").append(`
+      <h1>
+      <a href="./index.html"
+        ><img alt="투표24" src="./img/logo-color_only.png" width=30
+      /></a>
+      </h1>
+     
+        <span class="bar"></span>
+      </nav>
+    `);
+    return false;
+  } else {
+    $("header").append(`
+      <h1>
+      <a href="../../index.html"
+        ><img alt="투표24" src="../../img/logo-color_only.png" width=30
+        /></a>
+      </h1>
+      <nav id="gnb">
+      <ul>
+        <li class="sub1" data-menu="service-intro">
+          <a >상담문의 : 010-7217-8550 노기정이사 </a>
+          </li>
+          </ul>
         <span class="bar"></span>
       </nav>
     `);
