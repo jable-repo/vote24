@@ -139,7 +139,7 @@ function setCurrentNav() {
       <nav id="gnb">
       <ul>
         <li class="sub1" data-menu="service-intro">
-          <a >상담문의 : 010-7217-8550 노기정이사 </a>
+          <a >상담문의 : 010-7217-8550 노기정팀장 </a>
           </li>
           </ul>
         <span class="bar"></span>
