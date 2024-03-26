@@ -21,3 +21,4 @@ jobs:
           script: |
             cd /mark/vote24
             git pull
+            nginx -s reload
