@@ -113,10 +113,10 @@ function setCurrentNav_back() {
   }
 }
 
-function setCurrentNav() {
+function setCurrentNavTest() {
   var bodyClass = $("body").attr("class");
   var classArray = bodyClass.split(" ");
-  console.log(classArray[0]);
+
   if (classArray[0] === "main") {
     $("header").append(`
       <h1>
