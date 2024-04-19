@@ -15,7 +15,6 @@ function preventDefaultAnchor() {
 function setCurrentNav_back() {
   var bodyClass = $("body").attr("class");
   var classArray = bodyClass.split(" ");
-  console.log(classArray[0]);
   if (classArray[0] === "main") {
     $("header").append(`
       <h1>
@@ -230,13 +229,13 @@ function navEvent() {
 }
 
 function setFooter() {
-  $("#footer").append(`
-  <p class="copyright">
-  제이블소프트 | 경기도 하남시 미사강변동로 125(망월동)
-  | 대표 이민옥 |
-  사업자등록번호 869-02-02207 | 대표번호 010-7317-8550 | 메일
-  jableit@naver.com <br />Copyright © 제이블소프트
-  All Rights Reserved.
-</p>
-  `);
+  //   $("#footer").append(`
+  //   <p class="copyright">
+  //   제이블소프트 | 경기도 하남시 미사강변동로 125(망월동)
+  //   | 대표 이민옥 |
+  //   사업자등록번호 869-02-02207 | 대표번호 010-7317-8550 | 메일
+  //   jableit@naver.com <br />Copyright © 제이블소프트
+  //   All Rights Reserved.
+  // </p>
+  //   `);
 }
