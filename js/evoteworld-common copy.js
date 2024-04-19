@@ -113,54 +113,54 @@ function setCurrentNav_back() {
   }
 }
 
-function setCurrentNavTest() {
-  var bodyClass = $("body").attr("class");
-  var classArray = bodyClass.split(" ");
+// function setCurrentNavTest() {
+//   var bodyClass = $("body").attr("class");
+//   var classArray = bodyClass.split(" ");
 
-  if (classArray[0] === "main") {
-    $("header").append(`
-      <h1>
-      <a href="./index.html"
-        ><img alt="투표24" src="./img/logo-color_only.png" width=30
-      /></a>
-      </h1>
-     
-        <span class="bar"></span>
-      </nav>
-    `);
-    return false;
-  } else {
-    $("header").append(`
-      <h1>
-      <a href="../../index.html"
-        ><img alt="투표24" src="../../img/logo-color_only.png" width=30
-        /></a>
-      </h1>
-      <nav id="gnb">
-      <ul>
-        <li class="sub1" data-menu="service-intro">
-          <a >상담문의 : 010-7217-8550 노기정 팀장 </a>
-          </li>
-          </ul>
-        <span class="bar"></span>
-      </nav>
-    `);
-  }
+//   if (classArray[0] === "main") {
+//     $("header").append(`
+//       <h1>
+//       <a href="./index.html"
+//         ><img alt="투표24" src="./img/logo-color_only.png" width=30
+//       /></a>
+//       </h1>
 
-  $("#gnb > ul > li").each(function () {
-    if ($(this).attr("data-menu") === classArray[1]) {
-      $(this).addClass("on");
-      return false;
-    }
-  });
+//         <span class="bar"></span>
+//       </nav>
+//     `);
+//     return false;
+//   } else {
+//     $("header").append(`
+//       <h1>
+//       <a href="../../index.html"
+//         ><img alt="투표24" src="../../img/logo-color_only.png" width=30
+//         /></a>
+//       </h1>
+//       <nav id="gnb">
+//       <ul>
+//         <li class="sub1" data-menu="service-intro">
+//           <a >상담문의 : 010-7217-8550 노기정 팀장 </a>
+//           </li>
+//           </ul>
+//         <span class="bar"></span>
+//       </nav>
+//     `);
+//   }
 
-  $("#gnb > ul > li.on > ul > li").each(function () {
-    if ($(this).attr("data-menu") === classArray[2]) {
-      $(this).addClass("on");
-      return false;
-    }
-  });
-}
+//   $("#gnb > ul > li").each(function () {
+//     if ($(this).attr("data-menu") === classArray[1]) {
+//       $(this).addClass("on");
+//       return false;
+//     }
+//   });
+
+//   $("#gnb > ul > li.on > ul > li").each(function () {
+//     if ($(this).attr("data-menu") === classArray[2]) {
+//       $(this).addClass("on");
+//       return false;
+//     }
+//   });
+// }
 
 function navEvent() {
   $("#gnb > ul > li > a").on("mouseenter", function () {
@@ -230,14 +230,14 @@ function navEvent() {
   });
 }
 
-function setFooter() {
-  $("#footer").append(`
-  <p class="copyright">
-  제이블소프트 | 경기도 하남시 미사강변동로 125(망월동)
-  | 대표 이민옥 |
-  사업자등록번호 869-02-02207 | 대표번호 010-7317-8550 | 메일
-  jableit@naver.com <br />Copyright © 제이블소프트
-  All Rights Reserved.
-</p>
-  `);
-}
+// function setFooter() {
+//   $("#footer").append(`
+//   <p class="copyright">
+//   제이블소프트 | 경기도 하남시 미사강변동로 125(망월동)
+//   | 대표 이민옥 |
+//   사업자등록번호 869-02-02207 | 대표번호 010-7317-8550 | 메일
+//   jableit@naver.com <br />Copyright © 제이블소프트
+//   All Rights Reserved.
+// </p>
+//   `);
+// }
